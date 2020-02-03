@@ -12,5 +12,6 @@
   "src": "Packages/com.coffee.git-dependency-resolver",
 	"author": "mob-sakai <sakai861104@gmail.com> (https://github.com/mob-sakai)",
 	"dependencies": {
+		"com.newtonsoft.json": "12.0.1"
 	}
 }

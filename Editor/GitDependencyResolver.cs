@@ -6,15 +6,15 @@ using UnityEngine;
 
 namespace Coffee.PackageManager.DependencyResolver
 {
-	[InitializeOnLoad]
+	//[InitializeOnLoad]
 	public static class GitDependencyResolver
 	{
 		const System.StringComparison Ordinal = System.StringComparison.Ordinal;
 	
 		static GitDependencyResolver ()
 		{
-			EditorApplication.projectChanged += StartResolve;
-			StartResolve ();
+			//EditorApplication.projectChanged += StartResolve;
+			//StartResolve ();
 		}
 		
 		static PackageMeta[] GetInstalledPackages()
@@ -68,7 +68,7 @@ namespace Coffee.PackageManager.DependencyResolver
 			}
 		}
 
-		static void StartResolve ()
+		public static void StartResolve ()
 		{
 			// Uninstall unused packages (for auto-installed packages)
 			UninstallUnusedPackages ();
